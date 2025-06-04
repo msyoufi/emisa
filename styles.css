@@ -1,0 +1,170 @@
+:root {
+  --primary-color: #e2397a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  transition: color .15s;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+footer,
+main {
+  position: relative;
+  z-index: 10;
+}
+
+header {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+#about_button:hover {
+  color: var(--primary-color);
+}
+
+#emisa_logo {
+  width: 60vw;
+  max-width: 400px;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: .75rem;
+}
+
+#linker {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+#linker:hover {
+  color: var(--primary-color);
+}
+
+#about {
+  display: none;
+  width: 60vw;
+  max-width: 400px;
+  padding: 0 1rem 2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+footer {
+  padding: .5rem 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.social-icons i {
+  font-size: 1.25rem;
+}
+
+.social-icons a:hover i {
+  color: var(--primary-color);
+}
+
+.lower-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#copy_rights {
+  font-size: .7rem;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#hero_video_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#hero_video_container #video_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000079;
+}
+
+#hero_video_container video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 750px) {
+  button {
+    font-size: .9rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-height: 750px) {
+  #emisa_logo {
+    max-width: 300px;
+  }
+}
+
+@media (max-height: 500px) {
+  .social-icons {
+    margin-bottom: 0rem;
+  }
+}
